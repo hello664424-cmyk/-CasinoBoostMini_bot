@@ -1,10 +1,6 @@
 import os
 import random
-import logging
-from telebot import TeleBot, types
 
-# Setup logger
-logging.basicConfig(level=logging.INFO)
 
 # Load Token from Environment Variables
 TOKEN = os.environ.get("BOT_TOKEN")
