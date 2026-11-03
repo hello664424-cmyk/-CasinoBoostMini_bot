@@ -9,9 +9,6 @@ logging.basicConfig(level=logging.INFO)
 # Load Token from Environment Variables
 TOKEN = os.environ.get("BOT_TOKEN")
 if not TOKEN:
-    raise ValueError("ERROR: BOT_TOKEN environment variable is not set!")
-
-bot = TeleBot(TOKEN)
 
 # In-memory storage for user balances
 user_balances = {}
